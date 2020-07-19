@@ -238,7 +238,7 @@
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
-  grid-template: "...... ...... ......" "header header header" 200px "...... ...... ......" "...... center ......" 1100px "...... ...... ......" "footer footer footer" 120px "...... ...... ......" / 15% 70% 15%;
+  grid-template: "...... ...... ......" "header header header" 200px "...... ...... ......" "...... center ......" auto "...... ...... ......" 50px "footer footer footer" 120px "...... ...... ......" / 15% 70% 15%;
 }
 
 .newreg header {
@@ -268,7 +268,7 @@
 .newreg main {
   grid-area: center;
   display: grid;
-  grid-template: "title  title  title " 35px "formrg formrg formrg" 500px / 33% 34% 33%;
+  grid-template: "title  title  title " 35px "formrg formrg formrg" auto / 33% 34% 33%;
 }
 
 .newreg main .title {
@@ -282,7 +282,7 @@
 .newreg main .formrg {
   grid-area: formrg;
   display: grid;
-  grid-template: "namett namett namett namett" 100px "lastnm lastnm firstn firstn" 100px "lastkn lastkn firstk firstk" 100px "gender gender gender gender" 100px "birthd birthd birthd birthd" 100px "proimg proimg proimg proimg" 380px "...... submit submit ......" 100px / 25% 25% 25% 25%;
+  grid-template: "namett namett namett namett" 100px "lastnm lastnm firstn firstn" 100px "lastkn lastkn firstk firstk" 100px "gender gender gender gender" 100px "birthd birthd birthd birthd" 100px "proimg proimg proimg proimg" auto "...... ...... ...... ......" auto "...... submit submit ......" 100px / 25% 25% 25% 25%;
 }
 
 .newreg main .formrg h2 {
@@ -311,6 +311,7 @@
 
 .newreg main .formrg .firstn {
   grid-area: firstn;
+  padding-right: 150px;
 }
 
 .newreg main .formrg .firstn label {
@@ -328,6 +329,7 @@
 
 .newreg main .formrg .firstkana {
   grid-area: firstk;
+  padding-right: 150px;
 }
 
 .newreg main .formrg .firstkana label {
@@ -351,6 +353,10 @@
 
 .newreg main .formrg .gender input {
   margin-left: 10px;
+}
+
+.newreg main .formrg .gender .form {
+  width: 76%;
 }
 
 .newreg main .formrg .birthd {
@@ -386,6 +392,10 @@
   border-radius: 7px;
 }
 
+.newreg main .formrg .birthd .form {
+  width: 76%;
+}
+
 .newreg main .formrg .profimg {
   grid-area: proimg;
 }
@@ -409,7 +419,7 @@
   height: 60px;
   font-size: 22px;
   color: white;
-  margin: 0 auto;
+  margin: 40px auto;
   text-align: center;
   line-height: 57px;
 }
@@ -417,7 +427,7 @@
 .newreg main .formrg .form {
   border: solid 1px;
   height: 38px;
-  width: 350px;
+  width: 95%;
   border-radius: 7px;
 }
 

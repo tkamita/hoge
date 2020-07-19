@@ -258,8 +258,8 @@
       "...... ...... ......"
       "header header header" 200px
       "...... ...... ......"
-      "...... center ......" 1100px
-      "...... ...... ......"
+      "...... center ......" auto
+      "...... ...... ......" 50px
       "footer footer footer" 120px
       "...... ...... ......"
       / 15% 70% 15% ;
@@ -291,7 +291,7 @@
         display: grid;
         grid-template:
             "title  title  title " 35px
-            "formrg formrg formrg" 500px
+            "formrg formrg formrg" auto
             / 33% 34% 33% ;
             .title {
               grid-area: title;
@@ -309,7 +309,8 @@
                   "lastkn lastkn firstk firstk" 100px
                   "gender gender gender gender" 100px
                   "birthd birthd birthd birthd" 100px
-                  "proimg proimg proimg proimg" 380px
+                  "proimg proimg proimg proimg" auto
+                  "...... ...... ...... ......" auto
                   "...... submit submit ......" 100px
                   / 25% 25% 25% 25% ;
                   h2 {
@@ -334,6 +335,7 @@
                   }
                   .firstn {
                     grid-area: firstn;
+                    padding-right: 150px;
                     label {
                       font-size: 18px;
                     }
@@ -347,6 +349,7 @@
                   }
                   .firstkana {
                     grid-area: firstk;
+                    padding-right: 150px;
                     label {
                       font-size: 18px;
                     }
@@ -365,6 +368,9 @@
                     }
                     input {
                       margin-left: 10px;
+                    }
+                    .form {
+                      width: 76%;
                     }
                   }
                   .birthd {
@@ -394,6 +400,9 @@
                       width: 176px;
                       border-radius: 7px;
                     }
+                    .form {
+                      width: 76%;
+                    }
                   }
                   .profimg {
                     grid-area: proimg;
@@ -415,14 +424,14 @@
                     height: 60px;
                     font-size: 22px;
                     color: white;
-                    margin: 0 auto;
+                    margin: 40px auto;
                     text-align: center;
                     line-height: 57px;
                   }
                   .form {
                     border: solid 1px;
                     height: 38px;
-                    width: 350px;
+                    width: 95%;
                     border-radius: 7px;
                   }
             }
@@ -443,3 +452,4 @@
           / auto ;
   }
 }
+
