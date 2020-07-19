@@ -94,29 +94,153 @@
   font-size: 18px;
 }
 
-.public-scene main {
+.public-scene .user-top {
   grid-area: center;
   font-size: 18px;
   display: grid;
   grid-template: "item-1 item-3" auto "...... item-3" 15px "item-2 item-3" auto "...... ......" 15px / 50% 50%;
 }
 
-.public-scene main .job-offer {
+.public-scene .user-top .job-offer {
   grid-area: item-1;
   margin-right: 15px;
   background-color: white;
 }
 
-.public-scene main .schedule {
+.public-scene .user-top .schedule {
   grid-area: item-2;
   margin-right: 15px;
   background-color: white;
 }
 
-.public-scene main .study-post {
+.public-scene .user-top .study-post {
   grid-area: item-3;
   margin-right: 15px;
   background-color: white;
+}
+
+.public-scene .user-info {
+  grid-area: center;
+  margin-right: 30px;
+  display: grid;
+  grid-template: "item-1" 450px "......" 15px "item-2" auto "......" 15px "item-3" auto "......" 15px "item-4" auto "......" 15px "item-5" auto "......" 15px "item-6" auto "......" 15px "item-7" auto "......" 15px / 100%;
+}
+
+.public-scene .user-info .basic-info {
+  grid-area: item-1;
+  background-color: white;
+  display: grid;
+  grid-template: "item-1 item-2 item-2" 30px "item-1 item-3 item-3" 30px "item-1 item-4 item-4" 30px "item-7 item-5 item-5" 30px "item-8 item-6 item-6" 30px / 33% 34% 33%;
+}
+
+.public-scene .user-info .basic-info img {
+  grid-area: item-1;
+  height: 160px;
+  margin: 50px 0 0 90px;
+}
+
+.public-scene .user-info .basic-info table {
+  font-size: 18px;
+  margin-top: 50px;
+  width: 800px;
+}
+
+.public-scene .user-info .basic-info td {
+  width: 150px;
+  padding: 5px 0;
+}
+
+.public-scene .user-info .basic-info th {
+  text-align: left;
+  padding: 5px 0;
+}
+
+.public-scene .user-info .ability {
+  grid-area: item-2;
+  background-color: white;
+}
+
+.public-scene .user-info .ability h4 {
+  font-size: 22px;
+  margin: 30px 40px 10px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .ability .text-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .pr {
+  grid-area: item-3;
+  background-color: white;
+}
+
+.public-scene .user-info .pr h4 {
+  font-size: 22px;
+  margin: 30px 40px 30px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .pr h6 {
+  margin: 10px 40px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .pr .text-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .desire {
+  grid-area: item-4;
+  background-color: white;
+}
+
+.public-scene .user-info .desire h4 {
+  font-size: 22px;
+  margin: 30px 40px 10px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .desire .desire-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .qualification {
+  grid-area: item-5;
+  background-color: white;
+}
+
+.public-scene .user-info .qualification h4 {
+  font-size: 22px;
+  margin: 30px 40px 10px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .qualification ul {
+  margin: 20px 70px;
+  list-style: none;
+  padding: 0;
+}
+
+.public-scene .user-info .qualification ul li {
+  border-bottom: solid 1px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .qualification .desire-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
 }
 
 .public-scene nav {
