@@ -33,6 +33,184 @@
   }
 }
 
+.public-scene {
+  font-size: 2rem;
+  background-color: #E9E9E9;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template: "...... ...... ...... ...... ......" "header header header header header" 100px "...... ...... ...... ...... ......" 60px "...... center center right  ......" 1fr "...... ...... ...... ...... ......" 100px "footer footer footer footer footer" 50px "...... ...... ...... ...... ......" / 13% 30% 30% 15% 13%;
+}
+
+.public-scene header {
+  grid-area: header;
+  background-color: white;
+  display: grid;
+  grid-template: "...... ...... ...... ...... ......" 20px "logo   ...... ...... ...... item-1" 60px "...... ...... ...... ...... ......" 20px / 20% 20% 20% 20% 20%;
+}
+
+.public-scene header .logo {
+  grid-area: logo;
+  width: 240px;
+  margin-left: 25px;
+}
+
+.public-scene header .head-item {
+  grid-area: item-1;
+  display: grid;
+  grid-template: "item-1 item-2 item-3 item-4" 34px / 25% 25% 25% 25%;
+}
+
+.public-scene header .head-item .notification {
+  grid-area: item-1;
+  height: 68px;
+  padding: 5px;
+  background-color: #b0c955;
+  font-size: 18px;
+}
+
+.public-scene header .head-item .picture {
+  grid-area: item-2;
+  height: 68px;
+  padding: 5px;
+  background-color: #d4a0a0;
+  font-size: 18px;
+}
+
+.public-scene header .head-item .carender {
+  grid-area: item-3;
+  height: 68px;
+  padding: 5px;
+  background-color: #9dd89b;
+  font-size: 18px;
+}
+
+.public-scene header .head-item .logout {
+  grid-area: item-4;
+  height: 68px;
+  padding: 5px;
+  background-color: #5c70cc;
+  font-size: 18px;
+}
+
+.public-scene main {
+  grid-area: center;
+  font-size: 18px;
+  display: grid;
+  grid-template: "item-1 item-3" auto "...... item-3" 15px "item-2 item-3" auto "...... ......" 15px / 50% 50%;
+}
+
+.public-scene main .job-offer {
+  grid-area: item-1;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.public-scene main .schedule {
+  grid-area: item-2;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.public-scene main .study-post {
+  grid-area: item-3;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.public-scene nav {
+  grid-area: right;
+  font-size: 18px;
+  display: grid;
+  grid-template: "item-1" auto "......" 15px "item-2" auto "......" 15px "item-3" auto / 100%;
+}
+
+.public-scene nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.public-scene nav li {
+  border-bottom: solid 1px #E9E9E9;
+  padding-left: 30px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.public-scene nav .first-box {
+  grid-area: item-1;
+  background-color: white;
+}
+
+.public-scene nav .first-box .widget-header {
+  height: 50px;
+  background-color: #031C38;
+  text-align: center;
+}
+
+.public-scene nav .first-box .widget-header h3 {
+  margin: 0;
+  line-height: 50px;
+  font-size: 16px;
+  color: white;
+}
+
+.public-scene nav .second-box {
+  grid-area: item-2;
+  background-color: white;
+}
+
+.public-scene nav .second-box .widget-header {
+  height: 50px;
+  background-color: #031C38;
+  text-align: center;
+}
+
+.public-scene nav .second-box .widget-header h3 {
+  margin: 0;
+  line-height: 50px;
+  font-size: 16px;
+  color: white;
+}
+
+.public-scene nav .third-box {
+  grid-area: item-3;
+  background-color: white;
+}
+
+.public-scene nav .third-box .widget-header {
+  height: 50px;
+  background-color: #031C38;
+  text-align: center;
+}
+
+.public-scene nav .third-box .widget-header h3 {
+  margin: 0;
+  line-height: 50px;
+  font-size: 16px;
+  color: white;
+}
+
+.public-scene footer {
+  grid-area: footer;
+  background: #333333;
+}
+
+.public-scene footer .copy {
+  text-align: center;
+  font-size: 10px;
+  color: #95989A;
+  line-height: 32px;
+}
+
+@media (max-width: 1000px) {
+  .public-scene {
+    grid-template: "header" 150px "center" 1fr "left  " "right " "footer" 300px / auto;
+  }
+}
+
 .about {
   font-size: 2rem;
   width: 100%;
