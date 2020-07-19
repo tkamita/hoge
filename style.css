@@ -268,7 +268,7 @@
 .newreg main {
   grid-area: center;
   display: grid;
-  grid-template: "title  title  title " 35px "formrg formrg formrg" auto / 33% 34% 33%;
+  grid-template: "title  title  title " 35px "form   form   form  " auto / 33% 34% 33%;
 }
 
 .newreg main .title {
@@ -280,7 +280,7 @@
 }
 
 .newreg main .formrg {
-  grid-area: formrg;
+  grid-area: form;
   display: grid;
   grid-template: "namett namett namett namett" 100px "lastnm lastnm firstn firstn" 100px "lastkn lastkn firstk firstk" 100px "gender gender gender gender" 100px "birthd birthd birthd birthd" 100px "proimg proimg proimg proimg" auto "...... ...... ...... ......" auto "...... submit submit ......" 100px / 25% 25% 25% 25%;
 }
@@ -425,6 +425,110 @@
 }
 
 .newreg main .formrg .form {
+  border: solid 1px;
+  height: 38px;
+  width: 95%;
+  border-radius: 7px;
+}
+
+.newreg main .uselog {
+  grid-area: form;
+  display: grid;
+  grid-template: "firstp firstp firstp firstp" 100px "second second second second" 100px "...... submit submit ......" 100px "bar    bar    bar    bar   " 50px "...... regest regest ......" 100px / 25% 25% 25% 25%;
+}
+
+.newreg main .uselog .firstp {
+  grid-area: firstp;
+  font-size: 18px;
+  padding-left: 150px;
+}
+
+.newreg main .uselog .firstp span {
+  font-size: 12px;
+  background-color: red;
+  color: #f7f7f5;
+  line-height: 0px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.newreg main .uselog .firstp input {
+  margin-left: 10px;
+}
+
+.newreg main .uselog .firstp .form {
+  width: 76%;
+}
+
+.newreg main .uselog .second {
+  grid-area: second;
+  font-size: 18px;
+  padding-left: 150px;
+}
+
+.newreg main .uselog .second span {
+  font-size: 12px;
+  background-color: red;
+  color: #f7f7f5;
+  line-height: 0px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.newreg main .uselog .second select {
+  margin-top: 10px;
+}
+
+.newreg main .uselog .second .year {
+  height: 40px;
+  font-size: 18px;
+  width: 352px;
+  border-radius: 7px;
+}
+
+.newreg main .uselog .second .month, .newreg main .uselog .second .day {
+  height: 40px;
+  font-size: 18px;
+  width: 176px;
+  border-radius: 7px;
+}
+
+.newreg main .uselog .second .form {
+  width: 76%;
+}
+
+.newreg main .uselog .submit {
+  grid-area: submit;
+  width: 280px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 57px;
+}
+
+.newreg main .uselog .bar {
+  grid-area: bar;
+  border-bottom: solid 1px;
+}
+
+.newreg main .uselog .regest {
+  grid-area: regest;
+  width: 280px;
+  background-color: #ab3613;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 57px;
+}
+
+.newreg main .uselog .form {
   border: solid 1px;
   height: 38px;
   width: 95%;

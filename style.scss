@@ -291,7 +291,7 @@
         display: grid;
         grid-template:
             "title  title  title " 35px
-            "formrg formrg formrg" auto
+            "form   form   form  " auto
             / 33% 34% 33% ;
             .title {
               grid-area: title;
@@ -301,7 +301,7 @@
               line-height: 10px;
             }
             .formrg {
-              grid-area: formrg;
+              grid-area: form;
               display: grid;
               grid-template:
                   "namett namett namett namett" 100px
@@ -435,7 +435,101 @@
                     border-radius: 7px;
                   }
             }
-            
+            .uselog {
+              grid-area: form;
+              display: grid;
+              grid-template:
+                  "firstp firstp firstp firstp" 100px
+                  "second second second second" 100px
+                  "...... submit submit ......" 100px
+                  "bar    bar    bar    bar   " 50px
+                  "...... regest regest ......" 100px
+                  / 25% 25% 25% 25% ;
+                  .firstp {
+                    grid-area: firstp;
+                    font-size: 18px;
+                    padding-left: 150px;
+                    span {
+                      font-size: 12px;
+                      background-color: red;
+                      color: #f7f7f5;
+                      line-height: 0px;
+                      padding: 4px;
+                      margin-left: 10px;
+                    }
+                    input {
+                      margin-left: 10px;
+                    }
+                    .form {
+                      width: 76%;
+                    }
+                  }
+                  .second {
+                    grid-area: second;
+                    font-size: 18px;
+                    padding-left: 150px;
+                    span {
+                      font-size: 12px;
+                      background-color: red;
+                      color: #f7f7f5;
+                      line-height: 0px;
+                      padding: 4px;
+                      margin-left: 10px;
+                    }
+                    select {
+                      margin-top: 10px;
+                    }
+                    .year {
+                      height: 40px;
+                      font-size: 18px;
+                      width: 352px;
+                      border-radius: 7px;
+                    }
+                    .month, .day{
+                      height: 40px;
+                      font-size: 18px;
+                      width: 176px;
+                      border-radius: 7px;
+                    }
+                    .form {
+                      width: 76%;
+                    }
+                  }
+                  .submit {
+                    grid-area: submit;
+                    width: 280px;
+                    background-color: #6fab13;
+                    border-radius: 7px;
+                    height: 60px;
+                    font-size: 22px;
+                    color: white;
+                    margin: 40px auto;
+                    text-align: center;
+                    line-height: 57px;
+                  }
+                  .bar {
+                    grid-area: bar;
+                    border-bottom: solid 1px;
+                  }
+                  .regest {
+                    grid-area: regest;
+                    width: 280px;
+                    background-color: #ab3613;
+                    border-radius: 7px;
+                    height: 60px;
+                    font-size: 22px;
+                    color: white;
+                    margin: 40px auto;
+                    text-align: center;
+                    line-height: 57px;
+                  }
+                  .form {
+                    border: solid 1px;
+                    height: 38px;
+                    width: 95%;
+                    border-radius: 7px;
+                  }
+            }
       }
       footer {
         grid-area: footer;
