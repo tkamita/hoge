@@ -238,7 +238,7 @@
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
-  grid-template: "...... ...... ......" "header header header" 200px "...... ...... ......" "...... center ......" 1fr "...... ...... ......" "footer footer footer" 120px "...... ...... ......" / 15% 70% 15%;
+  grid-template: "...... ...... ......" "header header header" 200px "...... ...... ......" "...... center ......" 1100px "...... ...... ......" "footer footer footer" 120px "...... ...... ......" / 15% 70% 15%;
 }
 
 .newreg header {
@@ -268,7 +268,157 @@
 .newreg main {
   grid-area: center;
   display: grid;
-  grid-template: "header header header" 35px "...... center userlo" 165px / 33% 34% 33%;
+  grid-template: "title  title  title " 35px "formrg formrg formrg" 500px / 33% 34% 33%;
+}
+
+.newreg main .title {
+  grid-area: title;
+  margin: 0;
+  font-size: 28px;
+  border-bottom: solid;
+  line-height: 10px;
+}
+
+.newreg main .formrg {
+  grid-area: formrg;
+  display: grid;
+  grid-template: "namett namett namett namett" 100px "lastnm lastnm firstn firstn" 100px "lastkn lastkn firstk firstk" 100px "gender gender gender gender" 100px "birthd birthd birthd birthd" 100px "proimg proimg proimg proimg" 380px "...... submit submit ......" 100px / 25% 25% 25% 25%;
+}
+
+.newreg main .formrg h2 {
+  grid-area: namett;
+  font-size: 20px;
+  padding: 50px 0 20px 150px;
+}
+
+.newreg main .formrg h2 span {
+  font-size: 12px;
+  background-color: red;
+  color: #f7f7f5;
+  line-height: 0px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.newreg main .formrg .lastnm {
+  grid-area: lastnm;
+  padding-left: 150px;
+}
+
+.newreg main .formrg .lastnm label {
+  font-size: 18px;
+}
+
+.newreg main .formrg .firstn {
+  grid-area: firstn;
+}
+
+.newreg main .formrg .firstn label {
+  font-size: 18px;
+}
+
+.newreg main .formrg .lastkn {
+  grid-area: lastkn;
+  padding-left: 150px;
+}
+
+.newreg main .formrg .lastkn label {
+  font-size: 18px;
+}
+
+.newreg main .formrg .firstkana {
+  grid-area: firstk;
+}
+
+.newreg main .formrg .firstkana label {
+  font-size: 18px;
+}
+
+.newreg main .formrg .gender {
+  grid-area: gender;
+  font-size: 18px;
+  padding-left: 150px;
+}
+
+.newreg main .formrg .gender span {
+  font-size: 12px;
+  background-color: red;
+  color: #f7f7f5;
+  line-height: 0px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.newreg main .formrg .gender input {
+  margin-left: 10px;
+}
+
+.newreg main .formrg .birthd {
+  grid-area: birthd;
+  font-size: 18px;
+  padding-left: 150px;
+}
+
+.newreg main .formrg .birthd span {
+  font-size: 12px;
+  background-color: red;
+  color: #f7f7f5;
+  line-height: 0px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.newreg main .formrg .birthd select {
+  margin-top: 10px;
+}
+
+.newreg main .formrg .birthd .year {
+  height: 40px;
+  font-size: 18px;
+  width: 352px;
+  border-radius: 7px;
+}
+
+.newreg main .formrg .birthd .month, .newreg main .formrg .birthd .day {
+  height: 40px;
+  font-size: 18px;
+  width: 176px;
+  border-radius: 7px;
+}
+
+.newreg main .formrg .profimg {
+  grid-area: proimg;
+}
+
+.newreg main .formrg .profimg .picture {
+  margin-left: 150px;
+  background-color: cornflowerblue;
+  width: 160px;
+  height: 160px;
+}
+
+.newreg main .formrg .profimg input {
+  margin-left: 150px;
+}
+
+.newreg main .formrg .submit {
+  grid-area: submit;
+  width: 280px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 57px;
+}
+
+.newreg main .formrg .form {
+  border: solid 1px;
+  height: 38px;
+  width: 350px;
+  border-radius: 7px;
 }
 
 .newreg footer {
