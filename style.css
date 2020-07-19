@@ -231,3 +231,53 @@
     grid-template: "header" 300px "center" 1fr "footer" 100px / auto;
   }
 }
+
+.newreg {
+  font-size: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template: "...... ...... ......" "header header header" 200px "...... ...... ......" "...... center ......" 1fr "...... ...... ......" "footer footer footer" 120px "...... ...... ......" / 15% 70% 15%;
+}
+
+.newreg header {
+  grid-area: header;
+  display: grid;
+  grid-template: "header header header" 35px "...... center userlo" 165px / 33% 34% 33%;
+}
+
+.newreg header .backcl {
+  grid-area: header;
+  background-color: #012554;
+}
+
+.newreg header .logo {
+  grid-area: center;
+  text-align: center;
+  padding: 60px;
+}
+
+.newreg header .loggin {
+  grid-area: userlo;
+  text-align: right;
+  padding: 60px;
+  font-size: 18px;
+}
+
+.newreg main {
+  grid-area: center;
+  display: grid;
+  grid-template: "header header header" 35px "...... center userlo" 165px / 33% 34% 33%;
+}
+
+.newreg footer {
+  grid-area: footer;
+  background-color: #F3F3F3;
+}
+
+@media (max-width: 1000px) {
+  .newreg {
+    grid-template: "header" 300px "center" 1fr "footer" 100px / auto;
+  }
+}

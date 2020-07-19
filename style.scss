@@ -126,7 +126,7 @@
             .cap {
               grid-area: cap;
               text-align: center;
-              background-color: #041a31;;
+              background-color: #041a31;
               padding: 60px;
               line-height: 5px;
               color: white;
@@ -248,3 +248,64 @@
   }
 }
 
+.newreg {
+  font-size: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template:
+      "...... ...... ......"
+      "header header header" 200px
+      "...... ...... ......"
+      "...... center ......" 1fr
+      "...... ...... ......"
+      "footer footer footer" 120px
+      "...... ...... ......"
+      / 15% 70% 15% ;
+      header {
+        grid-area: header;
+        display: grid;
+        grid-template:
+            "header header header" 35px
+            "...... center userlo" 165px
+            / 33% 34% 33% ;
+            .backcl {
+              grid-area: header;
+              background-color: #012554;
+            }
+            .logo {
+              grid-area: center;
+              text-align: center;
+              padding: 60px;
+            }
+            .loggin {
+              grid-area: userlo;
+              text-align: right;
+              padding: 60px;
+              font-size: 18px;
+            }
+      }
+      main {
+        grid-area: center;
+        display: grid;
+        grid-template:
+            "header header header" 35px
+            "...... center userlo" 165px
+            / 33% 34% 33% ;
+      }
+      footer {
+        grid-area: footer;
+        background-color: #F3F3F3;
+      }
+}
+
+@media (max-width: 1000px) {
+  .newreg {
+      grid-template:
+          "header" 300px
+          "center" 1fr
+          "footer" 100px
+          / auto ;
+  }
+}
