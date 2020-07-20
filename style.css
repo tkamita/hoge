@@ -123,7 +123,7 @@
   grid-area: center;
   margin-right: 30px;
   display: grid;
-  grid-template: "item-1" 450px "......" 15px "item-2" auto "......" 15px "item-3" auto "......" 15px "item-4" auto "......" 15px "item-5" auto "......" 15px "item-6" auto "......" 15px "item-7" auto "......" 15px / 100%;
+  grid-template: "item-1" 450px "......" 15px "item-2" auto "......" 15px "item-3" auto "......" 15px "item-4" auto "......" 15px "item-5" auto "......" 15px "item-6" auto "......" 15px "item-7" auto "......" 15px "item-8" auto "......" 15px / 100%;
 }
 
 .public-scene .user-info .basic-info {
@@ -197,7 +197,7 @@
 }
 
 .public-scene .user-info .desire {
-  grid-area: item-4;
+  grid-area: item-5;
   background-color: white;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .public-scene .user-info .qualification {
-  grid-area: item-5;
+  grid-area: item-4;
   background-color: white;
 }
 
@@ -241,6 +241,55 @@
   border: solid 1px;
   border-radius: 4px;
   font-size: 20px;
+}
+
+.public-scene .user-info .item-6 {
+  grid-area: item-6;
+  background-color: white;
+}
+
+.public-scene .user-info .item-6 h4 {
+  font-size: 22px;
+  margin: 30px 40px 10px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .item-6 .desire-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .item-7 {
+  grid-area: item-7;
+  background-color: white;
+}
+
+.public-scene .user-info .item-7 h4 {
+  font-size: 22px;
+  margin: 30px 40px 10px;
+  border-bottom: solid 2px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .user-info .item-7 .desire-box {
+  margin: 20px 50px;
+  border: solid 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.public-scene .user-info .submit {
+  grid-area: item-8;
+  width: 280px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 57px;
 }
 
 .public-scene nav {
