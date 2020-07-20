@@ -454,6 +454,31 @@
   font-size: 16px;
 }
 
+.public-scene .offerd .basic-info .messa {
+  border: solid 1px;
+  border-radius: 5px;
+  margin: 0 40px 100px;
+  height: 150px;
+  font-size: 18px;
+}
+
+.public-scene .offerd .basic-info .transmission {
+  width: 200px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 50px;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 53px;
+}
+
+.public-scene .offerd .basic-info p {
+  margin: 15px 40px;
+  font-size: 20px;
+}
+
 .public-scene .offerd .basic-info h4 {
   font-size: 22px;
   margin: 90px 40px 10px;
