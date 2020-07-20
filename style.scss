@@ -541,6 +541,17 @@
           text-align: center;
           line-height: 57px;
         }
+        .save {
+          width: 280px;
+          background-color: red;
+          border-radius: 7px;
+          height: 60px;
+          font-size: 22px;
+          color: white;
+          margin: 40px 0 40px 260px;
+          text-align: center;
+          line-height: 57px;
+        }
       }
       nav {
         grid-area: right;
