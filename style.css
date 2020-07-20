@@ -534,6 +534,18 @@
   line-height: 57px;
 }
 
+.public-scene .offerd .edit {
+  width: 280px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  margin: 40px 0 40px 260px;
+  text-align: center;
+  line-height: 57px;
+}
+
 .public-scene nav {
   grid-area: right;
   font-size: 18px;
