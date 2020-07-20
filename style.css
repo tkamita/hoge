@@ -1173,6 +1173,26 @@
   background-color: white;
 }
 
+.admin-scene .offerd .users .messa {
+  border: solid 1px;
+  border-radius: 5px;
+  margin: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.admin-scene .offerd .users .transmission {
+  width: 200px;
+  background-color: #6fab13;
+  border-radius: 7px;
+  height: 50px;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 53px;
+}
+
 .admin-scene .offerd .users table {
   margin: 50px auto;
   width: 80%;
