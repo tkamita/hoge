@@ -535,6 +535,22 @@
   padding: 15px;
 }
 
+.public-scene .offerd .users ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto 50px;
+  padding: 0;
+  font-size: 22px;
+  border-bottom: solid 1px rgba(197, 196, 196, 0.849);
+}
+
+.public-scene .offerd .users ul li {
+  border: solid 1px;
+  border-radius: 5px;
+  width: 85%;
+  margin: 10px auto;
+}
+
 .public-scene .offerd .decline {
   grid-area: item-3;
   width: 280px;
