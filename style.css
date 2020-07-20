@@ -304,6 +304,38 @@
   background-color: white;
 }
 
+.public-scene .post .learn-rec ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.public-scene .post .learn-rec li {
+  border-bottom: solid 1px #E9E9E9;
+  padding-left: 30px;
+  height: 70px;
+  line-height: 35px;
+}
+
+.public-scene .post .learn-rec li .creat-ttl {
+  display: inline-block;
+}
+
+.public-scene .post .learn-rec li .creat-ttl p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.public-scene .post .learn-rec li .creat-ttl p span {
+  font-size: 12px;
+}
+
+.public-scene .post .learn-rec li img {
+  width: 60px;
+  height: 60px;
+  padding: 5px 30px;
+}
+
 .public-scene .post .learn-rec .widget-header {
   height: 50px;
   background-color: #031C38;
