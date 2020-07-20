@@ -874,8 +874,6 @@
 
 .newreg main .formrg {
   grid-area: form;
-  display: grid;
-  grid-template: "namett namett namett namett" 100px "lastnm lastnm firstn firstn" 100px "lastkn lastkn firstk firstk" 100px "gender gender gender gender" 100px "birthd birthd birthd birthd" 100px "proimg proimg proimg proimg" auto "...... ...... ...... ......" auto "...... submit submit ......" 100px / 25% 25% 25% 25%;
 }
 
 .newreg main .formrg h2 {
