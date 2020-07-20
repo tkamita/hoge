@@ -334,6 +334,13 @@
   line-height: 35px;
 }
 
+.public-scene .post .learn-rec li .creat-date {
+  font-size: 20px;
+  width: 80px;
+  display: inline-block;
+  padding-left: 30px;
+}
+
 .public-scene .post .learn-rec li .creat-ttl {
   display: inline-block;
 }
@@ -345,6 +352,16 @@
 
 .public-scene .post .learn-rec li .creat-ttl p span {
   font-size: 12px;
+}
+
+.public-scene .post .learn-rec li .offer {
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 7px;
+  display: inline-block;
+  margin-left: 300px;
 }
 
 .public-scene .post .learn-rec li img {
