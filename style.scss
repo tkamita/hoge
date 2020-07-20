@@ -316,6 +316,19 @@
         .learn-rec {
           grid-area: item-1;
           background-color: white;
+          .prof-box {
+            margin: 20px 80px;
+            img {
+              height: 120px;
+              margin-right: 30px;
+            }
+            .creat-ttl {
+              display: inline-block;
+              span {
+                font-size: 12px;
+              }
+            }
+          }
           ul {
             list-style: none;
             padding: 0;
