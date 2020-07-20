@@ -296,7 +296,7 @@
   grid-area: center;
   margin-right: 30px;
   display: grid;
-  grid-template: "item-1" 500px "......" 15px "item-2" 100px "......" 15px / 100%;
+  grid-template: "item-1" auto "......" 15px "item-2" 100px "......" 15px / 100%;
 }
 
 .public-scene .post .learn-rec {
