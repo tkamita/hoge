@@ -173,6 +173,22 @@
   font-size: 20px;
 }
 
+.public-scene .user-info .ability table {
+  font-size: 18px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.public-scene .user-info .ability td {
+  width: 150px;
+  padding: 5px 0;
+}
+
+.public-scene .user-info .ability th {
+  text-align: left;
+  padding: 5px 0;
+}
+
 .public-scene .user-info .pr {
   grid-area: item-3;
   background-color: white;
@@ -194,6 +210,21 @@
   border: solid 1px;
   border-radius: 4px;
   font-size: 20px;
+}
+
+.public-scene .user-info .pr table {
+  font-size: 18px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.public-scene .user-info .pr table .period {
+  width: 16%;
+}
+
+.public-scene .user-info .pr table td {
+  padding: 10px;
+  font-size: 14px;
 }
 
 .public-scene .user-info .desire {
@@ -783,14 +814,14 @@
   grid-area: center;
   margin-right: 30px;
   display: grid;
-  grid-template: "item-1" 450px "......" 15px "item-2" auto "......" 15px "item-3" auto "......" 15px "item-4" auto "......" 15px "item-5" auto "......" 15px "item-6" auto "......" 15px "item-7" auto "......" 15px "item-8" auto "......" 15px / 100%;
+  grid-template: "item-1" auto "......" 15px "item-2" auto "......" 15px "item-3" auto "......" 15px "item-4" auto "......" 15px "item-5" auto "......" 15px "item-6" auto "......" 15px "item-7" auto "......" 15px "item-8" auto "......" 15px / 100%;
 }
 
 .admin-scene .user-info .basic-info {
   grid-area: item-1;
   background-color: white;
   display: grid;
-  grid-template: "item-1 item-2 item-2" 30px "item-1 item-3 item-3" 30px "item-1 item-4 item-4" 30px "item-7 item-5 item-5" 30px "item-8 item-6 item-6" 30px / 33% 34% 33%;
+  grid-template: "item-1 item-2 item-2" auto "item-1 item-3 item-3" 30px "item-1 item-4 item-4" 30px "item-7 item-5 item-5" 30px "item-8 item-6 item-6" 30px / 33% 34% 33%;
 }
 
 .admin-scene .user-info .basic-info img {

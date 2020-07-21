@@ -201,6 +201,19 @@
             border-radius: 4px;
             font-size: 20px;
           }
+          table {
+            font-size: 18px;
+            width: 70%;
+            margin: 40px auto;
+          }
+          td {
+            width: 150px;
+            padding: 5px 0;
+          }
+          th {
+            text-align: left;
+            padding: 5px 0;
+          }
         }
         .pr {
           grid-area: item-3;
@@ -219,6 +232,18 @@
             border: solid 1px;
             border-radius: 4px;
             font-size: 20px;
+          }
+          table {
+            font-size: 18px;
+            width: 90%;
+            margin: 40px auto;
+            .period {
+              width: 16%;
+            }
+            td {
+              padding: 10px;
+              font-size: 14px;
+            }
           }
         }
         .desire {
@@ -779,7 +804,7 @@
         margin-right: 30px;
         display: grid;
         grid-template: 
-        "item-1" 450px
+        "item-1" auto
         "......" 15px
         "item-2" auto
         "......" 15px
@@ -801,7 +826,7 @@
           background-color: white;
           display: grid;
           grid-template: 
-          "item-1 item-2 item-2" 30px
+          "item-1 item-2 item-2" auto
           "item-1 item-3 item-3" 30px
           "item-1 item-4 item-4" 30px
           "item-7 item-5 item-5" 30px
